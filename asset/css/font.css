@@ -1,0 +1,63 @@
+/*
+    eot - ie지원
+    svg - 모바일에서 잘 나옴
+    *ttf - 트루타입 (저버전의 브라우저 지원)
+    *otf - 오픈트루타입 (저버전의 브라우저 지원)
+    ***woff - 모던 브라우저 (웹용 확장자)
+    ***woff2 - woff->50% 압축된 파일 (웹용 확장자)
+
+    
+    폰트변환 사이트 : @https://onlinefontconverter.com/
+
+    100
+    200 
+    *300 - light
+    *400 - regular
+    *500 - medium
+    *600 - semibold
+    *700 - bold
+    800 - extrabold
+    900 - black
+*/
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../font/Gilroy-Regular.woff2) format('woff2');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../font/Gilroy-Medium.woff2) format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'gilroy';
+    src: url(../font/Gilroy-SemiBold.woff2) format('woff2');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url(../font/NotoSansKR-Light-Hestia.woff) format('woff');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url(../font//NotoSansKR-Regular-Hestia.woff) format('woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url(../font/NotoSansKR-Medium-Hestia.woff) format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url(../font/NotoSansKR-Bold-Hestia.woff) format('woff');
+    font-weight: 700;
+}

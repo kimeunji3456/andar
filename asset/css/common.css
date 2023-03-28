@@ -1,0 +1,209 @@
+body {
+    font-family: 'gilroy', 'noto', sans-serif;
+    color: #333;
+    font-size: 13px;
+    line-height: 1.2em;
+    box-sizing: border-box;
+}
+
+body.o-hidden {
+    overflow: hidden;
+}
+
+/* 불가능 */
+/* body.o-hidden::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0ff;
+    z-index: 30;
+} */
+
+/* 첫 번째 방법 */
+/* body.o-hidden .header::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+} */
+
+/* 두 번째 방법 */
+body.o-hidden .dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+.color {
+    color: #EE5728;
+}
+
+.circle::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    right: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ee5728;
+}
+
+
+/* 제품 리스트 */
+.product-list a {
+    display: block;
+}
+
+.product-list .img-wrap {
+    position: relative;
+}
+
+.product-list img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.product-list .badge {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product-list .text-wrap {
+    padding: 10px 0 30px 10px;
+    display: flex;
+    flex-direction: column;
+    line-height: 23px;
+}
+
+.product-list .text-wrap .review {
+    display: block;
+    font-weight: 700;
+    color: #8e1f29;
+}
+
+.product-list .text-wrap .title {
+    width: 100%;
+    color: #333;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    padding: 10px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.product-list .price-box {
+    display: flex;
+    gap: 5px;
+}
+
+.product-list .price-box .percent {
+    color: #8e1f29;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.product-list .price-box .curr {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.product-list .price-box .ori {
+    font-size: 13px;
+    color: #8d8d8d;
+    vertical-align: top;
+    margin-top: 1px;
+    text-decoration: line-through;
+}
+
+.product-list .des {
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    margin-right: 0;
+    margin-top: 17px;
+    opacity: 1;
+}
+
+.product-list .des span {
+    font-size: 9px;
+    border: 1px solid rgba(142, 31, 41, 0.5);
+    padding: 5px 6px;
+    line-height: 1;
+    color: #8e1f28;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+}
+
+
+.section .link-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    line-height: 50px;
+    margin: 0 30px 50px 30px;
+
+    /* border: 1px solid #000;
+    display: block;
+    width: calc(100% - 100px);
+    margin: 0 auto; */
+}
+
+.section .link-more .viewmore::after {
+    content: '';
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-left: 5px;
+    width: 19px;
+    height: 19px;
+    background: url(../images/next.png) no-repeat;
+    background-size: 19px auto;
+    background-position: center;
+}
+
+.section .link-more img {
+    width: 24px;
+    height: 19px;
+}
+
+
+.bar {
+    width: 1px;
+    height: 10px;
+    background: #ccc;
+    margin: 0 10px;
+    display: inline-block;
+}
